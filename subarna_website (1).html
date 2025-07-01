@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the official personal website of Subarna Swaraj Shil.">
+    <meta name="author" content="Subarna Swaraj Shil">
+    <title>Welcome | www.suvarnsite.in</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+        body {
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .welcome-screen {
+            height: 100vh;
+            background-color: #0d0d0d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #e6c174;
+        }
+        .welcome-screen h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .continue-btn {
+            background: linear-gradient(135deg, #e6c174, #f3e9d2);
+            color: #000;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        .continue-btn:hover {
+            opacity: 0.9;
+        }
+        #main-content {
+            display: none;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #e6c174;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin-top: 10px;
+            list-style: none;
+        }
+        ul li::before {
+            content: "• ";
+            color: #e6c174;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #e6c174;
+        }
+    </style>
+</head>
+<body>
+
+<div class="welcome-screen" id="welcome">
+    <h1>Welcome to Subarna Swaraj's World</h1>
+    <button class="continue-btn" onclick="showMain()">Continue</button>
+</div>
+
+<div id="main-content">
+    <section style="text-align:center;">
+        <img src="profile.jpg" alt="Subarna Swaraj Shil" class="profile-image">
+        <h1>Subarna Swaraj Shil</h1>
+        <h3>A Moral Person</h3>
+        <p><em>“I know when to speak, when to stay silent, and when to simply walk away.”</em></p>
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Religion:</strong> Hindu</p>
+        <p><strong>Marital Status:</strong> Unmarried</p>
+        <p><strong>Address:</strong> Tripura, 799115</p>
+        <p><strong>Languages Known:</strong> English, Hindi, Bengali, Telugu, Odia, Nepali, Assamese, Rajasthani, Punjabi, Haryanvi</p>
+    </section>
+
+    <section>
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Traveling</li>
+            <li>Playing Chess</li>
+            <li>Spending time with my close ones</li>
+            <li>Building knowledge</li>
+            <li>Making money</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Goals & Career Objective</h2>
+        <p><strong>Short-Term Goal:</strong> Learn new skills and build a career in the government sector.</p>
+        <p><strong>Long-Term Goal:</strong> Start my own business and engage in social welfare work for the needy.</p>
+        <p><strong>Career Objective:</strong> To work hard in an organisation with full dedication and determination to achieve organizational as well as personal goals.</p>
+    </section>
+
+    <section>
+        <h2>My Strengths</h2>
+        <ul>
+            <li>Relationship Building</li>
+            <li>Problem Solving</li>
+            <li>Good Communicator</li>
+            <li>Teamwork</li>
+            <li>Responsible</li>
+            <li>Flexibility</li>
+            <li>Polyglotism</li>
+            <li>Quick Learning</li>
+            <li>Leadership</li>
+            <li>Self-Motivated</li>
+            <li>Honest</li>
+            <li>Calm Under Pressure</li>
+            <li>Disciplined</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> <a href="mailto:mr.suvarn764ss@gmail.com">mr.suvarn764ss@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 9667697941</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank">View Profile</a></p>
+    </section>
+</div>
+
+<script>
+    function showMain() {
+        document.getElementById('welcome').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
